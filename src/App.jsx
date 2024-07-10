@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import View from './components/View'
 import Records from './components/Record'
+import Add from './components/Add'
+import {Route,Routes} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +11,11 @@ function App() {
   return (
     <>
       <h1>Welcome To React </h1>
-      <Records/>
+      <View/>
+     <Routes>
+      <Route path='/'element={<Records/>}></Route>
+      <Route path='/Add'element={<Add/>}></Route>
+     </Routes>
     </>
   )
 }

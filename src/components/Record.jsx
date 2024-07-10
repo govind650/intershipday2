@@ -20,7 +20,7 @@ const Records = () => {
   return (
     <div>
        <TableContainer  component={Paper}>
-      <Table sx={{ minWidth: 650,backgroundColor:"yellow" }} aria-label="simple table">
+      <Table sx={{ minWidth: 750,backgroundColor:"yellow" }} aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell><b>NAME</b></TableCell>
@@ -33,7 +33,7 @@ const Records = () => {
           {rows.map((row) => (
             <TableRow
               key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              sx={{ 'td,th': { border: 3 } }}
             >
               <TableCell component="th" scope="row">
                 {row.name}

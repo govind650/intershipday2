@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import { AppBar, Box, IconButton, Toolbar,Typography } from '@mui/material';
+import {Link} from 'react-router-dom';
 
 const View = () => {
   return (
@@ -18,9 +19,10 @@ const View = () => {
           
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            Myapp
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Link to=""><Button color="inherit">View</Button></Link>
+          <Link to="/Add"> <Button color="inherit">Add</Button></Link>
         </Toolbar>
       </AppBar>
     </Box>
